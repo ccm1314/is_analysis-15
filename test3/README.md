@@ -12,7 +12,9 @@
 ~~~
 @startuml
 
-class 超级管理员 {
+            class 超级管理员 
+	    {
+
 		-String ID
 	 	-String username
 	 	-String password
@@ -25,9 +27,9 @@ class 超级管理员 {
  		+ setPassword()
 		+ getUsername()
  		+ getPassword()
- 		
-	}
-class 图书管理员 {
+ 	   }
+	  class 图书管理员 
+	  {
 		-String ID
 	 	-String username
 	 	-String password
@@ -46,9 +48,10 @@ class 图书管理员 {
  		+ setPassword()
 		+ getUsername()
  		+ getPassword()
- 		}   
-    class 借阅者 {
-        -String ID
+ 	    }   
+            class 借阅者 
+	    {
+        	-String ID
 	 	-String username
 	 	-String password
 		-String Sex
@@ -61,12 +64,14 @@ class 图书管理员 {
  		+ setPassword()
 		+ getUsername()
  		+ getPassword()
- 		}
-	class 游客 {
+ 	     }
+	  class 游客 
+	  {
 		__public方法__
 		+查询图书()
 	}
-	class 图书 {
+	class 图书 
+	{
 		__ 私有属性 __
 	 	-String BookName
 	 	-String ISBN
@@ -76,31 +81,38 @@ class 图书管理员 {
 	 	-String Publish
 	 	-String Abstract
 	 	-String Autor
+	 }
+	class 预订书籍
+	{
+     		+String  ISBN
+   	 	+String  ID
+   		 +Data  date
+   		 +新增预订信息()
+    		+删除预订信息()
+    		+更新预订信息()
+    		+查询预订信息()
 	}
-	class 预订书籍{
-    +String  ISBN
-    +String  ID
-    +Data  date
-    +新增预订信息()
-    +删除预订信息()
-    +更新预订信息()
-    +查询预订信息()
-}
-class 借阅书籍{
-    +String  ISBN
-    +String  ID
-    +Data  BorrowDate
-    +Data  BackDate
-    +查询书籍()
-    +借阅书籍()
-    +归还书籍()
-}
-class 借书记录 {
+	
+	class 借阅书籍
+	{
+   		 +String  ISBN
+    		+String  ID
+    		+Data  BorrowDate
+    		+Data  BackDate
+    		+查询书籍()
+   		 +借阅书籍()
+   	 	+归还书籍()
+       }
+	class 借书记录
+	{
 		__ 私有属性 __
 	 	-String UserName
 	 	-String ISBN
 	 	-Date BorrowDate
-	 	-Data  BackDate}
+	 	-Data  BackDate
+	}
+	
+	
 	图书管理员 <|-- 超级管理员 : 维护图书管理员信息
 	游客 <|-- 借阅者 : 注册登录
 	图书管理员 "1" -- "N" 借阅者 : 维护读者信息
