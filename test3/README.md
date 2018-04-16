@@ -11,6 +11,7 @@
 
 
 @startuml
+
 class 超级管理员 {
 		-String ID
 	 	-String username
@@ -41,13 +42,11 @@ class 图书管理员 {
 		+借还图书()
 		+维护读者()
 		__成员方法__
-		
-        + setUsername()
+		 + setUsername()
  		+ setPassword()
 		+ getUsername()
  		+ getPassword()
- 		
-	}   
+ 		}   
     class 借阅者 {
         -String ID
 	 	-String username
@@ -62,8 +61,7 @@ class 图书管理员 {
  		+ setPassword()
 		+ getUsername()
  		+ getPassword()
- 		
-	}
+ 		}
 	class 游客 {
 		__public方法__
 		+查询图书()
@@ -102,9 +100,7 @@ class 借书记录 {
 	 	-String UserName
 	 	-String ISBN
 	 	-Date BorrowDate
-	 	-Data  BackDate
-	}
-	
+	 	-Data  BackDate}
 	图书管理员 <|-- 超级管理员 : 维护图书管理员信息
 	游客 <|-- 借阅者 : 注册登录
 	图书管理员 "1" -- "N" 借阅者 : 维护读者信息
@@ -128,8 +124,7 @@ class 借书记录 {
 
 **2.1超级管理员对象**
 
-
-    object 超级管理员 
+   object 超级管理员 
     {
         ID = 29292929292929
 		 username = "周世强"
@@ -142,7 +137,7 @@ class 借书记录 {
 
 **2.2图书管理员对象**
 
-     object 图书管理员 
+   object 图书管理员 
       {
             ID = 201510414129
 	    	 username = "周世强"
@@ -153,7 +148,6 @@ class 借书记录 {
     ![图书管理员对象图](图书管理员对象图.png)
 
 **2.3借阅者对象**
-
     object 借阅者
      {
         ID = 666
@@ -165,17 +159,15 @@ class 借书记录 {
     ![借阅者对象图](借阅者对象图.png)
 
 **2.4游客对象**
-
      object 游客
-      {
-       
-	}
+    {
+     }
 图：
     ![游客对象图](游客对象图.png)
 
  **2.5图书对象**
 
-    object 图书
+  object 图书
      {
         BookName = "信息系统分析与设计(第四版)"
        ISBN = "978-7-302-32982-4"
@@ -191,7 +183,7 @@ class 借书记录 {
 
 **2.6预订书籍对象**
 
-     object 预订书籍
+   object 预订书籍
       {
        ISBN = "978-7-302-32982-4"
        ID = 201510414129
@@ -202,7 +194,7 @@ class 借书记录 {
 
  **2.7借阅书籍对象**
 
-     object 借阅书籍
+   object 借阅书籍
       {
         ISBN = "978-7-302-32982-4"
         ID = 201510414129
@@ -215,7 +207,7 @@ class 借书记录 {
 
 **2.8借书记录对象** 
 
-    object 借书记录
+   object 借书记录
      {
         UserName = "周世强"
        ISBN = "978-7-302-32982-4"
