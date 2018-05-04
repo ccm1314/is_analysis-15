@@ -20,4 +20,4 @@
 ### [实验1：业务流程建模](test1/README.md)
 ### [实验2：图书管理系统用例建模](test2/README.md)
 ### [实验3：图书管理系统领域对象建模](test3/README.md)
-### [实验4：图书管理系统领域对象建模](test3/README.md)
+### [实验4：图书管理系统的顺序图](test4/README.md)
