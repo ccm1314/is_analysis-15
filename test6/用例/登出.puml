@@ -1,7 +1,0 @@
-@startuml
-title 基于GitHub的实验管理平台--登出用例的顺序图
-actor 用户
-用户 -> 系统:退出登录
-系统->用户:成功
-
-@enduml

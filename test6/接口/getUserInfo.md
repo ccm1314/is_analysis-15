@@ -27,10 +27,10 @@
         {         
             "status": true,
             "info": null,
-            "ID":"201510414108",    
-            "name":"郭昆进",
+            "ID":"201510414129",    
+            "name":"周世强",
             "class_dept":"软件工程1班"
-            "github_username":"guokunjin",
+            "github_username":"zhoushiqiang",
             "type":"学生"            
         }
  
