@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/admin/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/admin/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body style="text-align:center>
+    <div id="base" class="">
+
+      <!-- Unnamed (半圆形) -->
+      <div id="u17" class="ax_default">
+        <img id="u17_img" class="img " src="images/admin/u17.png"/>
+        <div id="u17_text" class="text ">
+          <p><span>老师登录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u18" class="ax_default">
+        <div id="u18_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u19" class="ax_default button">
+        <div id="u19_div" class=""></div>
+        <div id="u19_text" class="text ">
+          <p><span>返回</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Left Arrow Button) -->
+      <div id="u20" class="ax_default marker">
+        <img id="u20_img" class="img " src="images/stu_login/u9.png"/>
+        <div id="u20_text" class="text ">
+          <p><span>&#149; 工号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u21" class="ax_default text_field">
+        <input id="u21_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (Left Arrow Button) -->
+      <div id="u22" class="ax_default marker">
+        <img id="u22_img" class="img " src="images/stu_login/u9.png"/>
+        <div id="u22_text" class="text ">
+          <p><span>&#149; 密码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u23" class="ax_default text_field">
+        <input id="u23_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (单选按钮) -->
+      <div id="u24" class="ax_default">
+        <label for="u24_input" style="position: absolute; left: 0px;">
+          <div id="u24_text" class="text ">
+            <p><span>记&nbsp; 住&nbsp; 我</span></p>
+          </div>
+        </label>
+        <input id="u24_input" type="radio" value="radio" name="u24"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u25" class="ax_default box_1">
+        <div id="u25_div" class=""></div>
+        <div id="u25_text" class="text ">
+          <p><span>登录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u26" class="ax_default box_1">
+        <div id="u26_div" class=""></div>
+        <div id="u26_text" class="text ">
+          <p><span>认证</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (心形) -->
+      <div id="u27" class="ax_default box_1">
+        <img id="u27_img" class="img " src="images/login/u5.png"/>
+        <div id="u27_text" class="text ">
+          <p><span>接口Login</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
